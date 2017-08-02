@@ -1,17 +1,13 @@
-<template>
-  <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
+<template lang="pug">
+  section.container
+    img(src="~assets/img/logo.png", alt="Nuxt.js Logo").logo
+    h1.title
       USERS
-    </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" :key="index" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user.name }}
-        </nuxt-link>
-      </li>
-    </ul>
-  </section>
+    ul.users
+      li(v-for="(user, index) in users", :key="index").user
+        nuxt-link(:to="{ name: 'id', params: { id: index }}") {{ user.name }}
+
+
 </template>
 
 <script>
@@ -31,19 +27,19 @@ export default {
 }
 </script>
 
-<style scoped>
-.title
-{
+<style lang="scss" scoped>
+.container {
+  margin-top: 40px;
+}
+.title {
   margin: 30px 0;
 }
-.users
-{
+.users {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.user
-{
+.user {
   margin: 10px 0;
 }
 </style>

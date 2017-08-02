@@ -35,3 +35,6 @@ vue.runtime.esm.js:475[Vue warn]: The client-side rendered virtual DOM tree is n
 在使用 plugins 引入vue-awesome和material-design时，控制台会报以上错误，虽然不影响使用但是还是很恶心的。并且在build时，网上有人说 会消失，所以就不使用了，留一个TODO。
 采用的是 font-awesome的比较原始的http引用， 很尬
 
+## 参考工程
+[Werb/Pixel-Web](https://github.com/Werb/Pixel-Web)
+

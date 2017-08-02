@@ -1,12 +1,14 @@
 <template lang="pug">
 	header
 		.camera
+			i.fa.fa-camera.fa-fw
 		.menu-list
 			ul
-				li 关注
+				li 关注 
+					i.fa.fa-caret-down
 				li 热门
 		.search
-			i.fa.fa-refresh.fa-spin
+			i.fa.fa-search.fa-fw
 </template>
 
 <style lang="scss">
@@ -21,18 +23,19 @@ header {
 	width: 100%;
 	height: 40px;
 	box-sizing: border-box;
-	background: pink;
+	background: #F6F6F6;
+	box-shadow: 0 1px 5px 0px #ddd;
 	.camera {
 		display: block;
-		width: 20px;
-		height: 20px;
-		background: red;
+		i {
+			font-size: 16px;
+		}
 	}
 	.search {
 		display: block;
-		width: 20px;
-		height: 20px;
-		background: yellow;
+		i {
+			font-size: 16px;
+		}
 	}
 	.menu-list {
 		ul {
@@ -40,6 +43,7 @@ header {
 			list-style: none;
 			li {
 				padding: 0 10px;
+				line-height: 20px;
 			}
 		}
 	}
