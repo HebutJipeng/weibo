@@ -6,6 +6,7 @@
 				li 关注
 				li 热门
 		.search
+			i.fa.fa-refresh.fa-spin
 </template>
 
 <style lang="scss">

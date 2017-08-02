@@ -10,6 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
+      { rel: 'stylesheet', type: 'text/css', href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
@@ -38,5 +39,12 @@ module.exports = {
         // })
       }
     }
-  }
+  },
+  /**
+   * plugins
+   */
+  plugins: [
+    { src: '~/plugins/vue-awesome', ssr: false },
+    { src: '~/plugins/material-design', ssr: false }
+  ]
 }
