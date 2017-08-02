@@ -17,3 +17,9 @@ const actions = {
 		commit(Bar, 2)
 	}
 }
+
+export default {
+	state,
+	actions,
+	mutations
+}
