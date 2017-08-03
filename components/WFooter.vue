@@ -1,12 +1,26 @@
 <template lang="pug">
-	footer
-		ul
-			li 1
-			li 2
+	footer {{aaa}}
+		<!-- ul
+			li(v-for="(tab, index) in tablist" :class="{ active: tab == isActive }")
+				nuxt-link(to="/{ tab }") tab -->
+			<!-- li
+				nuxt-link(to="/weibo") Weibo
 			li 3
 			li 4
-			li 5
+			li 5 -->
+		<!-- } -->
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			aaa: 1,
+			tablist: ['Home', 'Weibo', '3', '4', '5']
+		}
+	}
+}
+</script>
 
 <style lang="scss">
 footer {
