@@ -25,6 +25,7 @@ header {
 	box-sizing: border-box;
 	background: #F6F6F6;
 	box-shadow: 0 1px 5px 0px #ddd;
+	z-index: 100;
 	.camera {
 		display: block;
 		i {

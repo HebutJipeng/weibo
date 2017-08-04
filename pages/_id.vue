@@ -31,7 +31,8 @@ export default {
     return {
       title: `User: ${this.user.name}`
     }
-  }
+  },
+  layout: 'weibo'
 }
 </script>
 

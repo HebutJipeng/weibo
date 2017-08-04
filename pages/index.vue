@@ -4,7 +4,6 @@
     <h1 class="title">
       USERS
     </h1>
-    <nuxt-link :to="{ name: 'weibo' }">11</nuxt-link>
     <ul class="users">
       <li v-for="(user, index) in users" :key="index" class="user">
         <nuxt-link :to="{ name: 'id', params: { id: index }}">
@@ -27,7 +26,8 @@ export default {
     return {
       title: 'Users'
     }
-  }
+  },
+  layout: 'weibo'
 }
 </script>
 
