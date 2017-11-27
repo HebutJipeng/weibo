@@ -16,12 +16,28 @@
           a(href) 老司机
           | :排版
       .menu
-    h1.title
-      | USERS1
-    ul.users
-      li(v-for="(user, index) in users", :key="index").user
-        nuxt-link(:to="{ name: 'id', params: { id: index }}") {{ user.name }}
-
+        a.title
+          | @优设基础训练营:
+        span 【零基础平面设计入门：文字排版篇】用通俗易懂的实际案例
+        .img-wrap
+          a(href="")
+            img(src="~assets/img/logo.png")
+          a(href="")
+            img(src="~assets/img/logo.png")
+          a(href="")
+            img(src="~assets/img/logo.png")
+          a(href="")
+            img(src="~assets/img/logo.png")
+      .btn-group
+        a(href="")
+          i.fa.fa-mail-forward
+          |  转发
+        a(href="")
+          i.fa.fa-comment-o
+          |  1
+        a(href="")
+          i.fa.fa-thumbs-o-up
+          |  1
 
 </template>
 
@@ -97,6 +113,41 @@ export default {
       line-height: 16px;
       font-size: 14px;
       color: #333;
+    }
+  }
+  .menu {
+    padding: 15px 10px;
+    margin: 5px 0;
+    background-color: #eee;
+    a.title {
+      padding: 0;
+      display: inline-block;
+    }
+    .img-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        flex-basis: 33.3%;
+        img {
+          width: 90%;
+          padding: 5%;
+        }
+      }
+    }
+  }
+  .btn-group {
+    display: flex;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    a {
+      i {
+        font-size: 16px;
+        vertical-align: text-bottom;
+      }
+      width: 33%;
+      text-align: center;
+      line-height: 33px;
+      color: #999;
     }
   }
 }

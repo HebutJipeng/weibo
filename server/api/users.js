@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import axios from 'axios'
 
 const router = Router()
 
@@ -22,6 +23,11 @@ router.get('/users/:id', function (req, res, next) {
   } else {
     res.sendStatus(404)
   }
+})
+
+router.get('/users/:nickname', (req, res, next) => {
+  
+
 })
 
 export default router
